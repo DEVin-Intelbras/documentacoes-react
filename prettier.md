@@ -4,8 +4,6 @@
 
 ## Configurar Prettier e Adicionar configurações do Visual Studio Code
 
----
-
 ### Configurar Prettier
 
 1. Após criar o seu projeto com o Vite, rode o seguinte comando:
@@ -51,6 +49,8 @@
 3. Adicionar o [plugin do Prettier no VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) para ter feedback visual das regras
 
    ![Extensão Prettier](assets/prettier/image-2.png)
+   
+---
 
 ### Configurar Visual Studio Code
 
