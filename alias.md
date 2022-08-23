@@ -4,7 +4,6 @@
 
 ## Configurar Import Aliases no Vite
 
----
 
 ### Configurar path alias
 
