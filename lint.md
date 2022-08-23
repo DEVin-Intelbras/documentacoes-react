@@ -4,8 +4,6 @@
 
 ## Instalar ESLINT no Vite
 
----
-
 ### Instalação do ESLINT
 
 1. Após criar o seu projeto com o Vite, rode o seguinte comando:
