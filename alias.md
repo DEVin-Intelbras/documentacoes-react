@@ -36,7 +36,7 @@
 
    <br/>
 
-   Podemos deixar um caminho relativo utilizando o _, como é o caso do `'@assets/_': path.resolve(\_\_dirname, './src/assets/\*')`, dessa forma o import ocorre da seguinte maneira: `import { MeuAsset } from '@assets/meuAsset'`.
+   Podemos deixar um caminho relativo utilizando o `*`, como é o caso do `'@assets/*': path.resolve(\_\_dirname, './src/assets/\*')`, dessa forma o import ocorre da seguinte maneira: `import { MeuAsset } from '@assets/meuAsset'`.
 
    <br/>
 
