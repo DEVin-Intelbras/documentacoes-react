@@ -24,7 +24,7 @@
          '@components': path.resolve(__dirname, './src/components/index.js'),
          '@hooks': path.resolve(__dirname, './src/hooks/index.js'),
          '@pages': path.resolve(__dirname, './src/pages/index.js'),
-         '@assets/*': path.resolve(__dirname, './src/assets/*'),
+         '@assets': path.resolve(__dirname, './src/assets/*'),
          '@service': path.resolve(__dirname, './src/service/index.js'),
        },
      },
@@ -36,8 +36,17 @@
 
    <br/>
 
-   Podemos deixar um caminho relativo utilizando o _, como é o caso do `'@assets/_': path.resolve(\_\_dirname, './src/assets/\*')`, dessa forma o import ocorre da seguinte maneira: `import { MeuAsset } from '@assets/meuAsset'`.
+   Podemos deixar um caminho relativo utilizando o `*`, como é o caso do `'@assets': path.resolve(\_\_dirname, './src/assets/\*')`, dessa forma o import ocorre da seguinte maneira: `import { MeuAsset } from '@assets/meuAsset'`.
 
+   <br/>
+
+> Importante: para que a exportação de assets como `images` funcione corretamente, você precisa criar um script de exportação do asset, conforme exemplo abaixo:
+
+```js
+// ./src/assets/images
+import minhaImagem from "./minha-imagem.png";
+export { minhaImagem };
+```
    <br/>
 
 2. Para que o VsCode consiga resolver os paths aliases e o intellisense funcione de forma adequada é necessário configurar o arquivo jsconfig:
@@ -66,6 +75,8 @@
    ```
 
    _Note que pelo fato da **baseUrl** estar definida como `'./src'` os paths são definidos apenas com a rota a partir do **src**._
+
+
 
 3. Utilizar os imports no projeto:
 
